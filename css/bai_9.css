@@ -17,12 +17,18 @@ header {
   background-color: #09467c;
   display: flex;
   justify-content: space-between;
+
   align-items: center;
 }
 
-header img {
+header .header__logo__main {
   max-width: 400px;
   height: 100px;
+  margin-left: 30px;
+}
+
+header .header__logo__responsive {
+  display: none;
 }
 
 .header__content {
@@ -59,7 +65,7 @@ header img {
 }
 
 .content__left {
-  background-color: #09467c;
+  background-color: rgb(23, 60, 86);
   color: white;
   padding: 20px;
   min-width: 200px;
@@ -90,7 +96,7 @@ header img {
 
 .image > img {
   height: auto;
-  width: 200px;
+  width: 180px;
 }
 
 ul li {
@@ -116,4 +122,21 @@ ul > li > a {
 .link-return {
   text-align: right;
   margin-right: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    min-width: 650px;
+  }
+
+  header .header__logo__main {
+    display: none;
+  }
+
+  header .header__logo__responsive {
+    display: block;
+    width: 75px;
+    margin-left: 40px;
+    height: 100px;
+  }
 }

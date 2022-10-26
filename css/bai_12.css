@@ -7,14 +7,13 @@
   padding: 0;
 }
 
-body {
-  background-color: #ffbe7e;
-}
-
 .container {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  width: 75%;
+  margin: 0 auto;
+  background-color: #ffbe7e;
 }
 
 header {
@@ -47,7 +46,7 @@ header {
 }
 
 .section__down {
-  margin-top: 16px;
+  margin-top: 96px;
 }
 
 .section__up > img {
@@ -62,7 +61,7 @@ header {
   display: flex;
   flex-direction: column;
   background-color: #68fe9a;
-  padding-top: 10px;
+  padding: 10px 0;
 }
 
 .content__right h3,
@@ -76,4 +75,8 @@ header {
 
 .content__right h4 {
   padding: 20px 0;
+}
+
+a:hover {
+  color: red;
 }
