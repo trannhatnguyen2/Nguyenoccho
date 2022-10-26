@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background: url(../assets/img/trong-dong.png) no-repeat;
+  background-blend-mode: luminosity;
+  background-position-x: calc(100% + 100px);
+  background-position-y: -20px;
+  background-color: #09467c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  max-width: 400px;
+  height: 100px;
+}
+
+.header__content {
+  float: right;
+}
+
+.header__content__up > a,
+.header__content__up > span {
+  color: white;
+}
+
+.header__content {
+  max-width: 600px;
+}
+
+.header__content__down {
+  display: flex;
+  flex-direction: row;
+}
+
+.header__content__down span {
+  color: yellow;
+  font-weight: bold;
+}
+
+.header__content__down select {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.content__left {
+  background-color: #09467c;
+  color: white;
+  padding: 20px;
+  min-width: 200px;
+}
+
+.content__right {
+  padding: 10px;
+  flex: 1;
+}
+
+.content__right .image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section__title {
+  background-color: #dce7ed;
+  display: block;
+  padding: 10px;
+  color: #09467c;
+  font-weight: bold;
+}
+
+.section p {
+  background-color: #eeeff0;
+}
+
+.image > img {
+  height: auto;
+  width: 200px;
+}
+
+ul li {
+  /* padding: 10px; */
+  list-style: square;
+  padding: 10px;
+  margin-left: 5px;
+}
+
+ul li:hover {
+  background-color: #dce7ed;
+}
+
+ul li:hover a {
+  color: black;
+}
+
+ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+.link-return {
+  text-align: right;
+  margin-right: 30px;
+}

@@ -1,0 +1,149 @@
+:root {
+  --space: 20px;
+  --primary: rgba(37, 0, 251, 1);
+  --primary-gradient: rgba(0, 252, 255, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+header {
+  background-color: #ff9f29;
+  padding: 10px;
+}
+
+.header__title {
+  text-shadow: 4px 4px gray;
+  color: white;
+}
+
+.vignette__container {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0;
+}
+
+.vignette__section {
+  background: linear-gradient(
+    90deg,
+    var(--primary) 0%,
+    var(--primary-gradient) 100%
+  );
+  min-height: var(--space);
+  min-width: calc(var(--space) * 11);
+  max-height: var(--space);
+  max-width: calc(var(--space) * 11);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-right: var(--space);
+}
+
+.vignette__section > div {
+  background-color: #ff9f29;
+  height: 100%;
+  width: var(--space);
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  overflow: auto;
+  border-top: 2.5px solid var(--primary);
+  border-bottom: 2.5px solid var(--primary);
+}
+
+.container__left {
+  padding-right: 10px;
+}
+
+.content__left {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 10px;
+  border: 2px solid var(--primary);
+  overflow: auto;
+}
+
+.content__left__title {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.content__left > p {
+  margin: 5px;
+}
+
+.content__right {
+  padding: 10px;
+  overflow: auto;
+  flex: 1;
+}
+
+.content__right__title {
+  color: var(--primary);
+  font-size: xx-large;
+  letter-spacing: 5px;
+  padding-bottom: 10px;
+}
+
+table {
+  border: 2px solid var(--primary);
+  width: 550px;
+  border-spacing: 0;
+  background-color: white;
+  min-width: max-content;
+}
+
+table th {
+  background-color: #ff9f29;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: 1.5px solid white;
+  padding: 5px;
+}
+
+table td {
+  border: 1.5px inset black;
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+  font-size: medium;
+}
+
+.footer__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer__title > span {
+  display: flex;
+}
+
+.footer__title > span > span {
+  color: var(--primary);
+  font-weight: bold;
+}

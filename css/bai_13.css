@@ -1,0 +1,40 @@
+table {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+thead,
+tfoot {
+  background: blue;
+  color: white;
+}
+
+thead th {
+  border-top: 1px solid grey;
+  border-left: 1px solid grey;
+}
+
+tbody {
+  font-weight: bold;
+}
+
+tbody tr td {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: whitesmoke;
+}
+
+tbody tr:nth-child(even) {
+  background-color: lightpink;
+}
+
+tbody tr:hover {
+  background-color: yellow;
+  cursor: pointer;
+}

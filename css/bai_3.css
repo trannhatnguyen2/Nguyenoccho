@@ -1,0 +1,18 @@
+img {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+footer > span {
+  color: rgb(181, 129, 139) !important;
+}
+
+span {
+  color: blue;
+}
+
+ul > li {
+  list-style-type: circle;
+}
