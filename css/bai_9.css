@@ -41,7 +41,8 @@ header .header__logo__responsive {
 }
 
 .header__content {
-  max-width: 600px;
+  /* max-width: 600px; */
+  padding-right: 20px;
 }
 
 .header__content__down {
@@ -55,7 +56,8 @@ header .header__logo__responsive {
 }
 
 .header__content__down select {
-  width: 100%;
+  /* width: 100%; */
+  width: 280px;
 }
 
 .content {
